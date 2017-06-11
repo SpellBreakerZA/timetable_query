@@ -12,36 +12,33 @@
         <form method = "post" enctype="multipart/form-data" action="locale_query.php">
       
             <div>
-                <input name = "venues" list="venues">
-                <datalist id="venues">
-                    <option value="Thuto">
-                    <option value="Centenary">
-                    <option value="Chancellor's">
-                    <option value="Humanities">
-                    <option value="Chem Building">
-                    <option value="IT Building">
-                    <option value="EMB Building">
-                </datalist> 
+                <select name = "venues" list="venues">
+                    <option value="Thuto">Thuto</option>
+                    <option value="Centenary">Centenary</option>
+                    <option value="Chancellor's">Chancellor's</option>
+                    <option value="Humanities">Humanities</option>
+                    <option value="Chem Building">Chem Building</option>
+                    <option value="IT Building">IT Building</option>
+                    <option value="EMB Building">EMB Building</option>
+                </select> 
             </div>
             
             <div> 
-                <input name = "day" list="day">
-                <datalist id="day">
-                    <option value="Monday">
-                    <option value="Tuesday">
-                    <option value="Wednesday">
-                    <option value="Thursday">
-                    <option value="Friday">
-                </datalist> 
+                <select name = "day" list="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select> 
             </div>
             
             <div> 
-                <input name = "sem" list="sem">
-                <datalist id="sem">
-                    <option value="All year">
-                    <option value="Semester 1">
-                    <option value="Semester 2">
-                </datalist> 
+                <select name = "sem" list="sem">
+                    <option value="All year">All year</option>
+                    <option value="Semester 1">Semester 1</option>
+                    <option value="Semester 2">Semester 2</option>
+                </select> 
             </div>
             
             <div>
