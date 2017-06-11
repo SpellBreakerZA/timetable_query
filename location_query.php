@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "location_query.js" type = "text/javascript"></script>
   </head>
   <body>
   
@@ -42,12 +44,12 @@
             </div>
             
             <div>
+                <input id = "time-selector" name = "specifictime" type = "time">
                 <div style = "display: inline">Now?</div>
-                <input name = "now" type = "checkbox">
+                <input id = "now-box" name = "now" type = "checkbox">
             </div>
             
             <input type = submit>
-            
         </form>
       
       

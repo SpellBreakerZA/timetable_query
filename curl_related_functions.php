@@ -13,6 +13,6 @@
         return $text; 
     }
 
-    echo getHTMLFromURL("http://upnet.up.ac.za/tt/hatfield_timetable.html");
+    //echo getHTMLFromURL("http://upnet.up.ac.za/tt/hatfield_timetable.html");
 
 ?>

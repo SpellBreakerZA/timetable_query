@@ -65,7 +65,7 @@
                     $venueConstraint = " (venue LIKE '%$venue%') ";
                 }
                 
-                echo "Venue Constraint is " . $venueConstraint;
+//                echo "Venue Constraint is " . $venueConstraint;
                 
                 if (isset($_POST['now'])) {
                     $now = true;

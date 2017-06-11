@@ -14,6 +14,11 @@ thead {
     text-transform: uppercase; 
 }
 
+#time-selector {
+    display: block;
+}
+
+
 /* Some fancy stuff I wanted to try. didn't suit the page though*/
 .intro-heading1 {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;

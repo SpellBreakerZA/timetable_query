@@ -1,14 +1,53 @@
 <?php 
-
-    if (isset($_POST)) {
+        include 'insert_lecture.php';
+        createTables();
         
-        $textReceived = $_POST['text'];
-        $text = '<tr><td>2/EKN 214/G02/E/L2</td><td>S1</td><td>Thursday</td><td>11:30:00</td><td>12:30:00</td><td>Louwsaal/Louw hall</td></tr>';
-        echo $textReceived;
-        echo '<br>';
+        include 'curl_related_functions.php';
         
-        /* The text  provide follows the following format
+        $updatedhtmlcontent = getHTMLFromURL("http://upnet.up.ac.za/tt/hatfield_timetable.html");
+        file_put_contents('updatehtmlpage.txt', $updatedhtmlcontent);
+        
+        $file = fopen('updatehtmlpage.txt','r') or die("FAILED!");
+        echo "opened file";
+        while (!feof($file)) {
+            $text = fgets($file);
+            //echo $text;
+            $vals = getAssociatedValues($text);
+            echo '<br>';
+            //print_r($vals);
+            $time = getSemester($vals);
+            $day = getDay($vals);
+            $start = getStartTime($vals);
+            $end = getEndTime($vals);
+            $venue = getVenue($vals);
+            $module = getModule($vals);
+            $classType = getClassType($vals);
+            echo '<br>';
+            echo '-------------------------------------------------<br>';
+            echo '<br>' . getModule($vals);
+            echo '<br>' . getDay($vals);
+            echo '<br>' . getVenue($vals);
+            echo '<br>' . getStartTime($vals);
+            echo '<br>' . getEndTime($vals);
+            echo '<br>' . getSemester($vals);
+            echo '<br>' . getClassType($vals);
+            echo '-------------------------------------------------';
             
+            insertLecture($module, $venue, $start, $end, $time, $day, $classType);
+        }
+        fclose($file);
+        $conn->close();
+
+    /* The following functions use regular expressions to extract the data from the provided html page.
+        The expressions aren't perfect but they extract the data of interest perfectly.
+    
+        The text retrieved  follows the following format
+        
+            -------------Key---------------
+            ++ represents a <tr> tag
+            -- represents in a <td> tag 
+            -------------------------------
+
             ++
             -- Module / Group / Language
             -- Semester
@@ -18,53 +57,12 @@
             -- Venue
             ++ 
         
+        Some values needed further extraction such as the module code
+        
         */
-        
-        include 'insert_lecture.php';
-        createTables();
-        
-        $match = preg_match("/($textReceived)/i", $text, $results);
-        if ($match) {
-            echo 'Found the following! = ' . $results[0];
-        }
-        else echo 'Found nothing :(';
-        
-        echo "opening file";
-        $file = fopen('sample.txt','r') or die("FAILED!");
-        echo "opened file";
-        while (!feof($file)) {
-            $text = fgets($file);
-            //echo $text;
-            $vals = getAssociatedValues($text);
-            echo '<br>';
-            print_r($vals);
-            $time = getSemester($vals);
-            $day = getDay($vals);
-            $start = getStartTime($vals);
-            $end = getEndTime($vals);
-            $venue = getVenue($vals);
-            $module = getModule($vals);
-            $classType = getClassType($vals);
-            echo '<br>';
-            echo '<br>' . getSemester($vals);
-            echo '<br>' . getDay($vals);
-            echo '<br>' . getStartTime($vals);
-            echo '<br>' . getEndTime($vals);
-            echo '<br>' . getVenue($vals);
-            echo '<br>' . getModule($vals);
-            echo '<br>' . getClassType($vals);
-            
-            insertLecture($module, $venue, $start, $end, $time, $day, $classType);
-            
-            
-        }
-        fclose($file);
-        $conn->close();
-    }
 
     function getAssociatedValues($string) {
         
-        //$string = mysqli_escape($string);
         $match = preg_match('/<tr><td>(.*)<\/td><td>(.*)<\/td><td>(.*)<\/td><td>(.*)<\/td><td>(.*)<\/td><\/tr>/i',$string, $results);
         
         if ($match) {
