@@ -3,7 +3,7 @@
     include "database_connection.php";
     function getResultAsTableString($queryText) {
         
-        echo $queryText;
+//        echo $queryText;
         if ($queryText === null || $queryText === '') {
             return "null query!";
         }
@@ -20,11 +20,13 @@
                 <td> ID </td>
                 <td> Module </td>
                 <td> Venue </td>
+                <td> Day </td>
                 <td> Start </td>
                 <td> End </td>
-                <td> Day </td>
-                <td> When </td>
+                <td> Sem</td>
                 <td> Type </td>
+                
+                
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';
