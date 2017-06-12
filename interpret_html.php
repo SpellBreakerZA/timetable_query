@@ -8,12 +8,12 @@
         file_put_contents('updatehtmlpage.txt', $updatedhtmlcontent);
         
         $file = fopen('updatehtmlpage.txt','r') or die("FAILED!");
-        echo "opened file";
+//        echo "opened file";
         while (!feof($file)) {
             $text = fgets($file);
             //echo $text;
             $vals = getAssociatedValues($text);
-            echo '<br>';
+//            echo '<br>';
             //print_r($vals);
             $time = getSemester($vals);
             $day = getDay($vals);
@@ -21,7 +21,7 @@
             $end = getEndTime($vals);
             $venue = getVenue($vals);
             $module = getModule($vals);
-            $classType = getClassType($vals);
+            $classType = getClassType($vals);/*
             echo '<br>';
             echo '-------------------------------------------------<br>';
             echo '<br>' . getModule($vals);
@@ -31,12 +31,15 @@
             echo '<br>' . getEndTime($vals);
             echo '<br>' . getSemester($vals);
             echo '<br>' . getClassType($vals);
-            echo '-------------------------------------------------';
+            echo '-------------------------------------------------';*/
             
             insertLecture($module, $venue, $start, $end, $time, $day, $classType);
         }
         fclose($file);
         $conn->close();
+        
+        header("Location: index.php");
+        exit;
 
     /* The following functions use regular expressions to extract the data from the provided html page.
         The expressions aren't perfect but they extract the data of interest perfectly.
@@ -86,7 +89,7 @@
     function getSemester($results) {
         
         $str =  $results[1];
-        echo $str;
+//        echo $str;
         $match = preg_match('/<td>(.*)/', $results[1], $output);
         if ($match) {
             return $output[1];

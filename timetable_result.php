@@ -3,33 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <?php include 'header.php'; ?>
   </head>
   <body>
   
-    <h1>Timetable Query</h1>
+    <?php include 'navbar.php' ?>
+    <h1 class = "text-center">Timetable Query</h1>
 
     <?php
       
+      include 'display_database.php';
       if (isset($_POST) && isset($_POST['module-string'])) {
           $str = $_POST['module-string'];
           $arr = explode(",", $str);
           
-          $queryText = "SELECT * FROM lecture WHERE module = '$arr[0]'";
-          for($i = 1; $i < count($arr); $i++) {
-              $queryText .= " OR module = '$arr[$i]' ";
-          }
-          $queryText .= " ORDER BY module, classType";
-          //$queryText .= " ORDER BY module, classType";
           
-          echo $queryText . '<br>';
-          include 'display_database.php';
           for($i = 0; $i < count($arr); $i++) {
-              echo $arr[$i] . " ";
+              echo '<div class = "text-center module-text">' . $arr[$i] . '</div> <br>';
+              $queryText = "SELECT * FROM lecture WHERE module = '$arr[$i]' ORDER BY classType";
+              echo getResultAsTableStringNoID($queryText);
+              echo '<br>';
           }
-          
-          echo getResultAsTableStringNoID($queryText);
           $conn->close();
           
       }

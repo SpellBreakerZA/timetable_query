@@ -3,20 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>Form</title>
+        <?php include 'header.php'; ?>
         <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
-        <script src="general.js" type = "text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <style>
+            .oreo-wallpaper {
+                background-image: url(oreo_wallpaper.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .welcome-text {
+                font-size: 22px;
+                color: #FFF;
+                text-align: center;
+            }
+        </style>
+        
     </head>
-    <body>
-
-        <h1> Welcome :D</h1>
-        
-        
-        <a href = "interpret_html.php">Refresh current database</a>
-        <a href = "location_query.php">Find open venue</a>
-        <a href = "timetable_query.php">Find all the entries for your module</a>
-        <a href = "query_schedule.php">Query the database yourself</a>
-        <!-- -->
+    <body class = "oreo-wallpaper">
+        <?php include 'navbar.php' ?>
+                
+        <p class = "welcome-text">
+            This website was designed for convenience completely voluntarily. So if you 
+            find any problems with the website or if you are annoyed by a slight bug, please get over it ;D
+        </p>
 
     </body>
 </html>

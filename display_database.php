@@ -3,7 +3,6 @@
     include "database_connection.php";
     function getResultAsTableString($queryText) {
         
-//        echo $queryText;
         if ($queryText === null || $queryText === '') {
             return "null query!";
         }
@@ -59,17 +58,15 @@
             return "No results found!";
         }
 
-        $table = '<table> <thead>';
+        $table = '<table class = "table-responsive table-hover table-center"> <thead>';
         $table .= '<tr>
-                <td> Module </td>
-                <td> Venue </td>
-                <td> Day </td>
-                <td> Start </td>
-                <td> End </td>
-                <td> Sem</td>
-                <td> Type </td>
-                
-                
+                    <td> Module </td>
+                    <td> Venue </td>
+                    <td> Day </td>
+                    <td> Start </td>
+                    <td> End </td>
+                    <td> Sem</td>
+                    <td> Type </td>
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';

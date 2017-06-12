@@ -3,11 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Form</title>
+        <?php include 'header.php'; ?>
         <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
+        <style>
+            .center {
+                margin-left: auto !important;
+                margin-right: auto !important;
+                width: inherit;
+                display: block;
+                float: none;
+                clear: both;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
 
-        <div class = "intro-heading">Your Query Results!</div>
+        <?php include 'navbar.php' ?>
+        <div class = "center">Your Query Results!</div>
 
         <?php
 
@@ -41,25 +54,25 @@
                                           OR venue LIKE '%Muller%'
                                           OR venue LIKE '%Louw%'
                                           OR venue LIKE '%Te Water%') ";
-                    echo "<br> All halls in Chancellor's are Roos, Muller, Louw, Te Water <br>";
+                    echo "<br> <p style = 'text-align: center'>All halls in Chancellor's are Roos, Muller, Louw, Te Water</p> <br>";
                     
                 } else if ($venue === "Chem Building") {
                     $venueConstraint = " (venue LIKE '%North%' 
                                           OR venue LIKE '%South%' 
                                           OR venue LIKE '%Large Chem%') "; 
-                    echo "<br> All halls in Chem Building are North, South and Large Chem <br>";
+                    echo "<br> <p style = 'text-align: center'>All halls in Chem Building are North, South and Large Chem</p> <br>";
                 }
                 else if ($venue === "Humanities") {
                     $venueConstraint = " (venue LIKE '%HB%') ";
-                    echo "<br> All humanities locations are 3-12, 3-14, 3-15, 3-23, 3-24 and 4-1 until 4-16 and then magically a 4-21 <br>";
+                    echo "<br> <p style = 'text-align: center'> All humanities locations are 3-12, 3-14, 3-15, 3-23, 3-24 and 4-1 until 4-16 and then magically a 4-21 </p> <br>";
                 }
                 else if ($venue === "IT Building") {
                     $venueConstraint = " (venue LIKE '%IT%') ";
-                    echo "<br> All IT rooms are 2-24, 2-25, 2-26, 4-1, 4-2, 4-3, 4-4, 4-5 <br>";
+                    echo "<br> <p style = 'text-align: center'> All IT rooms are 2-24, 2-25, 2-26, 4-1, 4-2, 4-3, 4-4, 4-5</p> <br>";
                 }
                 else if ($venue === "EMB Building") {
                     $venueConstraint = " (venue LIKE '%EMB%') ";
-                    echo "<br> All EMB rooms are 2-150, 2-151, 4-150, 4-151, 4-152 <br>";
+                    echo "<br> <p style = 'text-align: center'>All EMB rooms are 2-150, 2-151, 4-150, 4-151, 4-152</p> <br>";
                 }
                 else {
                     $venueConstraint = " (venue LIKE '%$venue%') ";
@@ -77,14 +90,14 @@
                               WHERE $venueConstraint AND day LIKE '$day%'
                                     AND startTime LIKE '$hour%' " . $extraSemConstraint .
                               "ORDER BY venue, startTime, module";
-                    echo getResultAsTableString($query);
+                    echo getResultAsTableStringNoID($query);
                     $conn->close();
                 }
                 else {
                     $query = "SELECT * FROM lecture 
                               WHERE $venueConstraint AND day LIKE '$day%'" .$extraSemConstraint .
                               "ORDER BY venue, startTime, module";
-                    echo getResultAsTableString($query);
+                    echo getResultAsTableStringNoID($query);
                     $conn->close();
                 }
                     
