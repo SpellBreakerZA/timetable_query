@@ -19,6 +19,7 @@
             $day = getDay($vals);
             $start = getStartTime($vals);
             $end = getEndTime($vals);
+            $lang = getLanguage($vals);
             $venue = getVenue($vals);
             $module = getModule($vals);
             $classType = getClassType($vals);/*
@@ -33,7 +34,7 @@
             echo '<br>' . getClassType($vals);
             echo '-------------------------------------------------';*/
             
-            insertLecture($module, $venue, $start, $end, $time, $day, $classType);
+            insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType);
         }
         fclose($file);
         $conn->close();
@@ -91,6 +92,16 @@
         $str =  $results[1];
 //        echo $str;
         $match = preg_match('/<td>(.*)/', $results[1], $output);
+        if ($match) {
+            return $output[1];
+        }
+        else return null;
+    }
+
+    function getLanguage($results) {
+        $str =  $results[1];
+        $match = preg_match('/.*\/.*\/.*\/(\w{1})\//', $results[1], $output);
+        
         if ($match) {
             return $output[1];
         }

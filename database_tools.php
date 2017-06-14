@@ -22,7 +22,8 @@
 						startTime VARCHAR(50),
 						endTime VARCHAR(255),
 						timePeriod VARCHAR(80),
-                        classType VARCHAR(255)
+                        classType VARCHAR(255),
+                        language VARCHAR(8)
 					);';
 					
 		$result = $conn->query($createQuery) or die ('User table not created' . $conn->error); 	

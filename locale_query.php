@@ -80,18 +80,46 @@
                 
 //                echo "Venue Constraint is " . $venueConstraint;
                 
-                if (isset($_POST['now'])) {
-                    $now = true;
-                    //adding two hours to the time because the server
-                    //time is wrong apparently
-                    $time = time() + (2 * (60*60)); 
-                    $hour = date('h', $time);
-                    $query = "SELECT * FROM lecture 
-                              WHERE $venueConstraint AND day LIKE '$day%'
-                                    AND startTime LIKE '$hour%' " . $extraSemConstraint .
-                              "ORDER BY venue, startTime, module";
-                    echo getResultAsTableStringNoID($query);
-                    $conn->close();
+                if (isset($_POST['time'])) {
+                    
+                    if (isset($_POST['now'])) {
+                        $now = true;
+                        //adding two hours to the time because the server
+                        //time is wrong apparently
+                        $time = time() + (2 * (60*60)); 
+                        $hour = date('h', $time);
+                        $query = "SELECT * FROM lecture 
+                                  WHERE $venueConstraint AND day LIKE '$day%'
+                                        AND startTime LIKE '$hour%' " . $extraSemConstraint .
+                                  "ORDER BY venue, startTime, module";
+                        echo getResultAsTableStringNoID($query);
+                        $conn->close();
+                    }
+                    else {
+                        if ( isset($_POST['start-time']) || isset($_POST['end-time']) ) {
+                            $start = "";
+                            $end = "";
+                            if (isset($_POST['start-time'])) {
+                                $start = $_POST['start-time'];
+                            }
+                            if (isset($_POST['end-time'])) {
+                                $end = $_POST['end-time'];
+                            }    
+                                
+                            $startHour = date('h', strtotime($start));   
+                            $endHour = date('h', strtotime($end));   
+                            $query = "SELECT * FROM lecture 
+                                      WHERE $venueConstraint AND day LIKE '$day%'
+                                            AND " . " startTime BETWEEN '$start' AND '$end' " . $extraSemConstraint . 
+                                      "ORDER BY venue, startTime, module";
+                            echo getResultAsTableStringNoID($query);
+                            $conn->close();
+                        }
+                        else {
+                                echo "Error detected with given time input";
+                        } 
+                        
+                    }
                 }
                 else {
                     $query = "SELECT * FROM lecture 

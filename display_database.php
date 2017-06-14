@@ -46,16 +46,16 @@
         
     function getResultAsTableStringNoID($queryText) {
         
-//        echo $queryText;
+//        echo $queryText . '<br>';
         if ($queryText === null || $queryText === '') {
-            return "null query!";
+            return "<div class = 'center'> null query! </div>";
         }
             
         global $conn;
         $result = $conn->query($queryText);
         
         if ($result === null || $result->num_rows == 0) {
-            return "No results found!";
+            return "<div class = 'center'> No results found!</div>";
         }
 
         $table = '<table class = "table-responsive table-hover table-center"> <thead>';
@@ -67,6 +67,7 @@
                     <td> End </td>
                     <td> Sem</td>
                     <td> Type </td>
+                    <td> Lang </td>
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';

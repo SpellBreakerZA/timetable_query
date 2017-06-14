@@ -13,6 +13,7 @@ $(document).ready(function() {
                   alert("Blank");
               }    
                 
+              console.log("RESPONSE TEXT = " + request.responseText);    
               var jsonOptions = JSON.parse(request.responseText);
               var dataList = document.getElementById('modules');
 

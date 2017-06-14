@@ -40,6 +40,14 @@
       
         <form method = "post" enctype="multipart/form-data" action="timetable_result.php" class = "center">
       
+            <div class = "center"> 
+                <select name = "lang">
+                    <option value="English">English</option>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="Both">Both</option>
+                </select> 
+            </div>
+            
             <div class = "module-list" autocomplete = "off">
                 <label for = "module-string">Enter all the modules you have as a comma separated list OR use the previous text box to add the modules one by one</label>
                 <input class = "form-control center  text-input" name = "module-string" id = "module-string" type = "text">

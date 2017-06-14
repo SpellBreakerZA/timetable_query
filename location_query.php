@@ -55,10 +55,21 @@
                 </select> 
             </div>
             
-            <div class = "center">
-                <input id = "time-selector" name = "specifictime" type = "time" class = "center">
-                <div style = "display: inline">Now?</div>
-                <input id = "now-box" name = "now" type = "checkbox">
+            <div class = "center time">
+                <div id = "select-time">
+                    <div style = "display: inline">Filter based on time?</div>
+                    <input id = "time" name = "time" type = "checkbox" value = "unchecked">
+                </div>
+                <div id = "time-inputs">
+                    <div id = "time-specific-inputs">
+                        <div style = "display: inline">From</div>
+                        <input id = "start-time" name = "start-time" type = "time" class = "center">
+                        <div style = "display: inline">To</div>
+                        <input id = "end-time" name = "end-time" type = "time" class = "center">
+                    </div>
+                    <div style = "display: inline">Now?</div>
+                    <input id = "now-box" name = "now" type = "checkbox">
+                </div>
             </div>
             
             <input type = submit>
