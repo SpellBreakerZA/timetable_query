@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>Form</title>
         <?php include 'header.php'; ?>
-        <link rel = "stylesheet" href = "css/styles.css" type = "text/css"> 
         
     </head>
     <body class = "oreo-wallpaper">

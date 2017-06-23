@@ -4,18 +4,6 @@
         <meta charset="UTF-8">
         <title>Form</title>
         <?php include 'header.php'; ?>
-        <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
-        <style>
-            .center {
-                margin-left: auto !important;
-                margin-right: auto !important;
-                width: inherit;
-                display: block;
-                float: none;
-                clear: both;
-                text-align: center;
-            }
-        </style>
     </head>
     <body>
 

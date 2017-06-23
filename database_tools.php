@@ -30,4 +30,21 @@
 		
 	}
 
+    function getTableCreationDate() {
+        
+        global $conn;
+        $queryText = "SELECT create_time FROM INFORMATION_SCHEMA.TABLES WHERE table_name = 'lecture'";
+        $result = $conn->query($queryText) or die ('Could not query creation date of table...');
+        
+        if ($result->num_rows !== 0) {
+            $row = $result->fetch_assoc();
+            $date = $row['create_time'];
+            echo $date;
+        }
+        else {
+            die("Got no result from DBMS...");
+        } 
+        
+    }
+
 ?>

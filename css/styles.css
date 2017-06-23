@@ -1,3 +1,14 @@
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: inherit;
+    display: block;
+    float: none;
+    clear: both;
+    text-align: center;
+    font-weight: bolder;
+}
+
 tr,td,table {
     border: 2px solid #000;
     padding: 3px;
