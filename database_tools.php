@@ -39,11 +39,39 @@
         if ($result->num_rows !== 0) {
             $row = $result->fetch_assoc();
             $date = $row['create_time'];
-            echo $date;
+            return $date;
         }
         else {
-            die("Got no result from DBMS...");
+//            die("Got no result from DBMS...");
+            return null;
         } 
+        
+    }
+
+    function getDaysSinceUpdate() {
+        
+        global $conn;
+        $queryText = "SELECT DATEDIFF(NOW(), create_time) as diff FROM INFORMATION_SCHEMA.TABLES WHERE table_name = 'lecture'";
+        $result = $conn->query($queryText) or die ('Could not query creation date of table...');
+        
+        if ($result->num_rows !== 0) {
+            $row = $result->fetch_assoc();
+            $date = $row['diff'];
+            return $date;
+        }
+        else {
+//            die("Got no result from DBMS...");
+            return null;
+        } 
+        
+    }
+
+    function shouldUpdate() {
+        
+        if (getDaysSinceUpdate() >= '7') {
+            echo 'update';
+        }
+        else echo 'no update';
         
     }
 
