@@ -1,9 +1,10 @@
 <?php 
 
     if (isset($_POST) && isset($_POST['text'])) {
-        $text = $_POST['text'];
-        
         include 'database_connection.php';
+
+        $text = $conn->real_escape_string($_POST['text']);
+
         $queryText = "SELECT DISTINCT module FROM lecture WHERE module LIKE '$text%' ORDER BY module";
         $result = $conn->query($queryText) or exit;
         

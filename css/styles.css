@@ -39,3 +39,10 @@ thead {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+table .green {
+    background-color: rgb(184, 240, 143);
+}
+table .red {
+    background-color: #ffb3d3;
+}

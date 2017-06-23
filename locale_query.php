@@ -23,7 +23,77 @@
         <div class = "center">Your Query Results!</div>
 
         <?php
+    
+            
+        
+            function createTable($queryText, $day) {
+                global $conn;
+    
+                $prototypeVenue = [];
 
+                for($i = 7; $i < 19; $i++) {
+                    $prototypeVenue[str_pad($i, 2, '0', STR_PAD_LEFT).':30:00'] = [
+                        'occupied' => false,
+                        'startTime' => str_pad($i, 2, '0', STR_PAD_LEFT).':30:00',
+                        'endTime' => str_pad($i+1, 2, '0', STR_PAD_LEFT).':30:00',
+                        'day' => $day
+                    ];
+                }
+    
+                if ($queryText === null || $queryText === '') {
+                    return "<div class = 'center'> null query! </div>";
+                }
+
+                $result = $conn->query($queryText);
+
+                if ($result === null || $result->num_rows == 0) {
+                    return "<div class = 'center'> This venue is free for the given times</div>";
+                }
+
+                $table = '<table class = "table-responsive table-hover table-center"> <thead>';
+                $table .= '<tr>
+                            <td> Occupied </td>
+                            <td> Venue </td>
+                            <td> Day </td>
+                        </tr>';
+                $table .= '</thead>';
+                $table .= '<tbody>';
+                $venues = [];
+                while ($row = $result->fetch_assoc()) {
+
+                    if ($row['module'] == null) {
+                        continue;
+                    }
+                    if(!isset($venues[$row['venue']])) {
+                        $venues[$row['venue']] = $prototypeVenue;
+                    }
+                    $venues[$row['venue']];
+                    if(!isset($venues[$row['venue']][$row['startTime']])){
+                        echo "Weirdness just happened";
+                        $venues[$row['venue']][$row['startTime']] = [];
+                    }
+                    $venues[$row['venue']][$row['startTime']]['occupied'] = true;
+                    $venues[$row['venue']][$row['startTime']]['startTime'] = $row['startTime'];
+                    $venues[$row['venue']][$row['startTime']]['endTime'] = $row['endTime'];
+                    $venues[$row['venue']][$row['startTime']]['day'] = $row['day'];
+                }
+                foreach($venues as $venueName => $venueTimes) {
+                    foreach($venueTimes as $venueTime) {
+                        $table .= '<tr class="'.($venueTime['occupied']?"red":"green").'">';
+                            $table .= '<td>'.($venueTime['occupied']?"Occupied":"Free").'</td>';
+                            $table .= '<td>'.$venueName.'</td>';
+                            $startTime = trim($venueTime['startTime'],'0');
+                            $endTime = trim($venueTime['endTime'],'0');
+                            $table .= '<td>'.substr($venueTime['day'],0,3).' '.substr($startTime,0,strlen($startTime)-1).' - '.substr($endTime,0,strlen($endTime)-1).'</td>';
+
+                        $table .= '</tr>'; 
+                    }
+                }
+                $table .= '</tbody></table>';
+                return $table;
+
+            }
+        
             if (isset($_POST) && isset($_POST['day']) && isset($_POST['venues']) && isset($_POST['sem'])) {
                 
                 include 'display_database.php';
@@ -92,7 +162,7 @@
                                   WHERE $venueConstraint AND day LIKE '$day%'
                                         AND startTime LIKE '$hour%' " . $extraSemConstraint .
                                   "ORDER BY venue, startTime, module";
-                        echo getResultAsTableStringNoID($query);
+                        echo createTable($query, $day);
                         $conn->close();
                     }
                     else {
@@ -112,7 +182,7 @@
                                       WHERE $venueConstraint AND day LIKE '$day%'
                                             AND " . " startTime BETWEEN '$start' AND '$end' " . $extraSemConstraint . 
                                       "ORDER BY venue, startTime, module";
-                            echo getResultAsTableStringNoID($query);
+                            echo createTable($query, $day);
                             $conn->close();
                         }
                         else {
@@ -125,7 +195,7 @@
                     $query = "SELECT * FROM lecture 
                               WHERE $venueConstraint AND day LIKE '$day%'" .$extraSemConstraint .
                               "ORDER BY venue, startTime, module";
-                    echo getResultAsTableStringNoID($query);
+                    echo createTable($query, $day);
                     $conn->close();
                 }
                     

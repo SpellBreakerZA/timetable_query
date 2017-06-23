@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <?php include 'header.php'; ?>
-    <script src = "autocomplete.js" type = "text/javascript"></script>
+    <script src = "js/autocomplete.js" type = "text/javascript"></script>
     <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
     <style>
         .center {

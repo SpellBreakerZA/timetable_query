@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <?php include 'header.php'; ?>
-    <script src = "location_query.js" type = "text/javascript"></script>
+    <script src = "js/location_query.js" type = "text/javascript"></script>
     <style>
         .center {
             margin-left: auto !important;
@@ -51,7 +51,7 @@
                 <select name = "sem" list="sem">
                     <option value="All year">All year</option>
                     <option value="Semester 1">Semester 1</option>
-                    <option value="Semester 2">Semester 2</option>
+                    <option value="Semester 2" selected >Semester 2</option>
                 </select> 
             </div>
             
