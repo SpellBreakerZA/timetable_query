@@ -4,21 +4,7 @@
         <meta charset="UTF-8">
         <title>Form</title>
         <?php include 'header.php'; ?>
-        <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
-        
-        <style>
-            .oreo-wallpaper {
-                background-image: url(oreo_wallpaper.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .welcome-text {
-                font-size: 22px;
-                color: #FFF;
-                text-align: center;
-            }
-        </style>
+        <link rel = "stylesheet" href = "css/styles.css" type = "text/css"> 
         
     </head>
     <body class = "oreo-wallpaper">

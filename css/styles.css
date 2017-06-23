@@ -34,15 +34,23 @@ thead {
     clear: both;
     text-align: center;
 }
+
 .oreo-wallpaper {
-    background-image: url(oreo_wallpaper.jpg);
+    background-image: url("../images/oreo_wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.welcome-text {
+    font-size: 22px;
+    color: #FFF;
+    text-align: center;
 }
 
 table .green {
     background-color: rgb(184, 240, 143);
 }
+
 table .red {
     background-color: #ffb3d3;
 }

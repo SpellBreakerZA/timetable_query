@@ -8,13 +8,9 @@
         file_put_contents('updatehtmlpage.txt', $updatedhtmlcontent);
         
         $file = fopen('updatehtmlpage.txt','r') or die("FAILED!");
-//        echo "opened file";
         while (!feof($file)) {
             $text = fgets($file);
-            //echo $text;
             $vals = getAssociatedValues($text);
-//            echo '<br>';
-            //print_r($vals);
             $time = getSemester($vals);
             $day = getDay($vals);
             $start = getStartTime($vals);
@@ -22,19 +18,25 @@
             $lang = getLanguage($vals);
             $venue = getVenue($vals);
             $module = getModule($vals);
-            $classType = getClassType($vals);/*
-            echo '<br>';
-            echo '-------------------------------------------------<br>';
-            echo '<br>' . getModule($vals);
-            echo '<br>' . getDay($vals);
-            echo '<br>' . getVenue($vals);
-            echo '<br>' . getStartTime($vals);
-            echo '<br>' . getEndTime($vals);
-            echo '<br>' . getSemester($vals);
-            echo '<br>' . getClassType($vals);
-            echo '-------------------------------------------------';*/
+            $classType = getClassType($vals);
+//            echo '<br>';
+//            echo '-------------------------------------------------<br>';
+//            echo '<br>' . getModule($vals);
+//            echo '<br>' . getDay($vals);
+//            echo '<br>' . getVenue($vals);
+//            echo '<br>' . getStartTime($vals);
+//            echo '<br>' . getEndTime($vals);
+//            echo '<br>' . getSemester($vals);
+//            echo '<br>' . getClassType($vals);
+//            echo '-------------------------------------------------';
             
             insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType);
+            
+            //Deleting NULL valued rows
+            $conn->query("DELETE FROM lecture WHERE module IS NULL");
+            $conn->close();
+            
+            
         }
         fclose($file);
         $conn->close();

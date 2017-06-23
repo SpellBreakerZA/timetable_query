@@ -24,8 +24,6 @@
                 <td> End </td>
                 <td> Sem</td>
                 <td> Type </td>
-                
-                
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';

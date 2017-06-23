@@ -3924,7 +3924,7 @@
 <tr><td>2/WST 211/G01/E/P1b</td><td>S1</td><td>Monday</td><td>13:30:00</td><td>16:30:00</td><td>SIT 1 lab</td></tr>
 <tr><td>2/WST 211/G01/E/P1b</td><td>S1</td><td>Monday</td><td>13:30:00</td><td>16:30:00</td><td>Oranje/Orange lab</td></tr>
 <tr><td>2/WST 211/G01/E/P1b</td><td>S1</td><td>Monday</td><td>13:30:00</td><td>16:30:00</td><td>Blou/Blue lab 1</td></tr>
-<tr><td>3/SGM 323/G01/B/O2</td><td>S2</td><td>Wednesday</td><td>15:30:00</td><td>16:30:00</td><td>Ing/Eng III - 6</td></tr>
+<tr><td>3/SGM 323/G01/B/O2</td><td>S2</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>Ing/Eng III - 7</td></tr>
 <tr><td>1/WTW 124/G03/E/P1</td><td>S2</td><td>Tuesday</td><td>10:30:00</td><td>13:30:00</td><td>GW/HB 4-3</td></tr>
 <tr><td>1/WTW 124/G07/E/P1</td><td>S2</td><td>Wednesday</td><td>14:30:00</td><td>17:30:00</td><td>IT 2-26</td></tr>
 <tr><td>2/INL 230/G01/E/P1</td><td>S1</td><td>Wednesday</td><td>08:30:00</td><td>09:30:00</td><td>IT 4-2</td></tr>
