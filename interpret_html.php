@@ -34,9 +34,7 @@
             
             //Deleting NULL valued rows
             $conn->query("DELETE FROM lecture WHERE module IS NULL");
-            $conn->close();
-            
-            
+ 
         }
         fclose($file);
         $conn->close();

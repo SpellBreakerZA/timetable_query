@@ -30,10 +30,10 @@
 		
 	}
 
-    function getTableCreationDate() {
+    function getTableCreationDate($tableName) {
         
         global $conn;
-        $queryText = "SELECT create_time FROM INFORMATION_SCHEMA.TABLES WHERE table_name = 'lecture'";
+        $queryText = "SELECT create_time FROM INFORMATION_SCHEMA.TABLES WHERE table_name = '$tableName'";
         $result = $conn->query($queryText) or die ('Could not query creation date of table...');
         
         if ($result->num_rows !== 0) {
@@ -48,10 +48,10 @@
         
     }
 
-    function getDaysSinceUpdate() {
+    function getDaysSinceLastUpdate($tableName) {
         
         global $conn;
-        $queryText = "SELECT DATEDIFF(NOW(), create_time) as diff FROM INFORMATION_SCHEMA.TABLES WHERE table_name = 'lecture'";
+        $queryText = "SELECT DATEDIFF(NOW(), create_time) as diff FROM INFORMATION_SCHEMA.TABLES WHERE table_name = '$tableName'";
         $result = $conn->query($queryText) or die ('Could not query creation date of table...');
         
         if ($result->num_rows !== 0) {
@@ -66,9 +66,9 @@
         
     }
 
-    function shouldUpdate() {
+    function shouldUpdate($tableName) {
         
-        if (getDaysSinceUpdate() >= '7') {
+        if (getDaysSinceUpdate($tableName) >= '7') {
             echo 'update';
         }
         else echo 'no update';

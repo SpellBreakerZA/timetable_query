@@ -5,17 +5,7 @@
     <title>Form</title>
     <?php include 'header.php'; ?>
     <script src = "js/autocomplete.js" type = "text/javascript"></script>
-    <link rel = "stylesheet" href = "styles.css" type = "text/css"> 
     <style>
-        .center {
-            margin-left: auto !important;
-            margin-right: auto !important;
-            display: block;
-            width: 100%;
-            float: none;
-            clear: both;
-            text-align: center;
-        }
         .text-input{
             margin-top: 5px;
             margin-bottom: 5px;
@@ -27,6 +17,7 @@
   <body>
       
         <?php include 'navbar.php'; ?>
+        <?php include 'modal_update.php' ?>
   
         <h1 class = "center">Timetable Query</h1>
         
@@ -50,7 +41,7 @@
             
             <div class = "module-list" autocomplete = "off">
                 <label for = "module-string">Enter all the modules you have as a comma separated list OR use the previous text box to add the modules one by one</label>
-                <input class = "form-control center  text-input" name = "module-string" id = "module-string" type = "text">
+                <input class = "form-control center  text-input" name = "module-string" id = "module-string" type = "text" readonly>
             </div>
             
             <input type = submit class = "btn btn-default btn-danger">

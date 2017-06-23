@@ -20,6 +20,7 @@
   <body>
   
         <?php include 'navbar.php' ?>
+        <?php include 'modal_update.php' ?>
       
         <h1 class = "center">Location Query</h1>
         
