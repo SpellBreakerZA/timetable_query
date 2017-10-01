@@ -3,13 +3,13 @@
 //    include 'database_connection.php';
     include 'database_tools.php';
 
-    function insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType) {
+    function insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType, $group) {
         
         global $conn;
         
-        $stmt = $conn->prepare('INSERT INTO lecture (module, venue, startTime, endTime, language, timePeriod, day, classType) VALUES(?,?,?,?,?,?,?,?)');
+        $stmt = $conn->prepare('INSERT INTO lecture (module, venue, startTime, endTime, language, timePeriod, day, classType,groupNum) VALUES(?,?,?,?,?,?,?,?,?)');
         
-        $stmt->bind_param("ssssssss", $module, $venue, $start, $end, $lang, $time, $day, $classType);
+        $stmt->bind_param("sssssssss", $module, $venue, $start, $end, $lang, $time, $day, $classType, $group);
         $stmt->execute();
         
     }

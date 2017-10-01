@@ -12,8 +12,8 @@
       <ul class="nav navbar-nav">
         <li><a href = "interpret_html.php">Refresh current database</a></li>
         <li><a href = "location_query.php">Find open venue</a></li> 
-        <li><a href = "timetable_query.php">Find all the entries for your module</a></li> 
-        <li><a href = "query_schedule.php">Query the database yourself</a></li> 
+        <li><a href = "timetable_query.php">Find all the entries for your module</a></li>
+        <li><a href = "timetable_builder/module_data.php">Demo Timetable</a></li>
       </ul>
     </div>
   </div>

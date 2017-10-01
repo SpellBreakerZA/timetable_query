@@ -19,6 +19,7 @@
             $venue = getVenue($vals);
             $module = getModule($vals);
             $classType = getClassType($vals);
+            $group = getGroup($vals);
 //            echo '<br>';
 //            echo '-------------------------------------------------<br>';
 //            echo '<br>' . getModule($vals);
@@ -30,9 +31,8 @@
 //            echo '<br>' . getClassType($vals);
 //            echo '-------------------------------------------------';
             
-            insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType);
+            insertLecture($module, $venue, $start, $end, $lang, $time, $day, $classType, $group);
             
-            //Deleting NULL valued rows
             $conn->query("DELETE FROM lecture WHERE module IS NULL");
  
         }
@@ -85,6 +85,17 @@
         }
         else return null;
         
+    }
+
+    function getGroup($results) {
+        $str =  $results[1];
+        echo $str;
+        $match = preg_match('/.\/.*\/([\w\d]{3}).*/', $results[1], $output);
+        
+        if ($match) {
+            return $output[1];
+        }
+        else return null;
     }
 
     function getSemester($results) {

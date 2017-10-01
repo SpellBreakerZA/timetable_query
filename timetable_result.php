@@ -14,7 +14,9 @@
       
       include 'display_database.php';
       if (isset($_POST) && isset($_POST['module-string']) && isset($_POST['lang'])) {
+          
           $str = $_POST['module-string'];
+          $str = filter_var($str, FILTER_SANITIZE_STRING);
           $arr = explode(",", $str);
           
           $lang = $_POST['lang'];
@@ -33,13 +35,13 @@
               echo getResultAsTableStringNoID($queryText);
               echo '<br>';
           }
-          $conn->close();
           
       }
       else {
           echo "Error retrieving data";
       }
       
+      $conn->close();
     ?>
       
       

@@ -23,9 +23,12 @@
 						endTime VARCHAR(255),
 						timePeriod VARCHAR(80),
                         classType VARCHAR(255),
-                        language VARCHAR(8)
+                        language VARCHAR(8), 
+                        groupNum VARCHAR(8)
+                        
 					);';
 					
+        echo '<br>'. $createQuery . '<br>';
 		$result = $conn->query($createQuery) or die ('User table not created' . $conn->error); 	
 		
 	}
@@ -72,6 +75,24 @@
             echo 'update';
         }
         else echo 'no update';
+        
+    }
+
+    function getData($queryText) {
+        
+        if ($queryText === null || $queryText === '') {
+            return null;
+        }
+            
+        global $conn;
+        $result = $conn->query($queryText);
+        
+        if ($result === null || $result->num_rows == 0) {
+            return null;
+        }
+        else {
+            return $result;
+        }
         
     }
 

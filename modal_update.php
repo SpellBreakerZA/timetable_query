@@ -15,7 +15,7 @@
       </div>
       <div class="modal-footer">
           <a class="btn btn-default btn-warning" href="interpret_html.php">Update</a>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
       </div>
     </div>
 
