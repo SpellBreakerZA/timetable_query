@@ -10,7 +10,8 @@
         <?php include 'navbar.php' ?>
         <?php 
     
-            include "timetable_scheduler_functions.php";
+            include "timetable_builder/newer_code/module.php";
+            include "timetable_builder/newer_code/timetablewrapper.php";
     
             if ( (isset($_POST) && isset($_POST['module-string']) && isset($_POST['lang']) )) {
                 
@@ -18,8 +19,9 @@
                 $str = filter_var($str, FILTER_SANITIZE_STRING);
                 $arr = explode(",", $str);
                 
-                $t = new TimeTable();
-                //$t->print_raw();
+                
+                
+                /* $t = new TimeTable();
                 $t->add_subject('Mon', '14:30', 'COS224');
                 $t->add_subject('Mon', '13:30', 'COS224');
                 $t->add_subject('Mon', '15:30', 'COS224');
@@ -28,9 +30,8 @@
                 $t->add_subject('Mon', '16:30', 'COS224');
                 $t->add_subject('Mon', '16:30', 'COS224');
                 $t->add_prac('Tues', 13, 16 , 'OMG114');
-                //$t->print_raw();
                 echo $c = $t->getClashes()->createHTMLTable();
-                echo $t->createHTMLTable();
+                echo $t->createHTMLTable(); */
                 
             }
             else {

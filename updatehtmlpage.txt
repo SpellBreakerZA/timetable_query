@@ -28,6 +28,8 @@
 </tr>
 </thead>
 <tbody>
+<tr><td>4/VGE 411/G01/B/L2</td><td>S2</td><td>Tuesday</td><td>13:30:00</td><td>14:30:00</td><td>GW/HB 3-15</td></tr>
+<tr><td>4/WKE 420/G01/B/L2</td><td>S2</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>GW/HB 4-10</td></tr>
 <tr><td>1/WTW 165/G03/E/P1</td><td>S2</td><td>Thursday</td><td>11:30:00</td><td>13:30:00</td><td>IT 4-1</td></tr>
 <tr><td>2/EFK 220/G01/E/T2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 4-14</td></tr>
 <tr><td>2/PBL 200/G02/E/L2</td><td>J/Y</td><td>Friday</td><td>15:30:00</td><td>16:30:00</td><td>Thuto 1-1</td></tr>
@@ -75,7 +77,7 @@
 <tr><td>2/PTG 211/G01/B/B4</td><td>S1</td><td>Wednesday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-16</td></tr>
 <tr><td>2/PTG 211/G01/B/B2</td><td>S1</td><td>Tuesday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 1-13</td></tr>
 <tr><td>1/PTG 101/G02/E/L1</td><td>J/Y</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 1-14</td></tr>
-<tr><td>1/PTG 101/G02/E/B4</td><td>J/Y</td><td>Wednesday</td><td>11:30:00</td><td>12:30:00</td><td>GW/HB 1-14</td></tr>
+<tr><td>1/PTG 101/G02/E/B4</td><td>J/Y</td><td>Tuesday</td><td>16:30:00</td><td>17:30:00</td><td>GW/HB 1-12</td></tr>
 <tr><td>1/PTG 101/G02/E/B3</td><td>J/Y</td><td>Tuesday</td><td>15:30:00</td><td>16:30:00</td><td>GW/HB 1-12</td></tr>
 <tr><td>1/PTG 101/G02/E/B2</td><td>J/Y</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>GW/HB 1-12</td></tr>
 <tr><td>1/PTG 101/G02/E/B1</td><td>J/Y</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 1-9</td></tr>
@@ -103,12 +105,12 @@
 <tr><td>7/MIE 780/G01/B/L3</td><td>S1</td><td>Wednesday</td><td>17:30:00</td><td>20:30:00</td><td>GW/HB 3-24</td></tr>
 <tr><td>1/SMC 153/G01/E/L3</td><td>K4/Q4</td><td>Friday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-12</td></tr>
 <tr><td>1/SMC 153/G01/E/L2</td><td>K4/Q4</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>GW/HB 4-12</td></tr>
-<tr><td>1/SMC 153/G01/E/L1</td><td>K4/Q4</td><td>Wednesday</td><td>08:30:00</td><td>09:30:00</td><td>EB/EMB 4-151</td></tr>
+<tr><td>1/SMC 153/G01/E/L1</td><td>K4/Q4</td><td>Tuesday</td><td>08:30:00</td><td>09:30:00</td><td>Noordsaal/North hall</td></tr>
 <tr><td>1/SMC 152/G01/E/L3</td><td>K3/Q3</td><td>Friday</td><td>09:30:00</td><td>10:30:00</td><td>VD Bijlsaal/VD Bijl hall</td></tr>
 <tr><td>1/SMC 152/G01/E/L2</td><td>K3/Q3</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>Suidsaal/South hall</td></tr>
 <tr><td>1/SMC 152/G01/E/L1</td><td>K3/Q3</td><td>Tuesday</td><td>08:30:00</td><td>09:30:00</td><td>Te Watersaal/Te Water hall</td></tr>
 <tr><td>1/EXE 159/G01/E/L3</td><td>K4/Q4</td><td>Friday</td><td>11:30:00</td><td>12:30:00</td><td>Suidsaal/South hall</td></tr>
-<tr><td>1/EXE 159/G01/E/L2</td><td>K4/Q4</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
+<tr><td>1/EXE 159/G01/E/L2</td><td>K4/Q4</td><td>Monday</td><td>09:30:00</td><td>10:30:00</td><td>Teologie/Theology 1-9</td></tr>
 <tr><td>1/EXE 159/G01/E/L1</td><td>K4/Q4</td><td>Wednesday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-9</td></tr>
 <tr><td>1/EXE 152/G01/E/L2</td><td>K3/Q3</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-10</td></tr>
 <tr><td>1/EXE 152/G01/E/L1</td><td>K3/Q3</td><td>Wednesday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-12</td></tr>
@@ -154,7 +156,7 @@
 <tr><td>2/EFK 220/G01/E/T1</td><td>S2</td><td>Tuesday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 3-24</td></tr>
 <tr><td>2/BCM 261/G02/B/L2</td><td>S2</td><td>Friday</td><td>16:30:00</td><td>17:30:00</td><td>Eeufees/Centenary 6</td></tr>
 <tr><td>2/BCM 261/G02/B/L1</td><td>S2</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>Eeufees/Centenary 2</td></tr>
-<tr><td>2/BCM 262/G02/B/L2</td><td>S2</td><td>Tuesday</td><td>16:30:00</td><td>17:30:00</td><td>IT 4-4</td></tr>
+<tr><td>2/BCM 262/G02/B/L2</td><td>S2</td><td>Tuesday</td><td>16:30:00</td><td>17:30:00</td><td>Eeufees/Centenary 3</td></tr>
 <tr><td>2/BCM 262/G02/B/L1</td><td>S2</td><td>Monday</td><td>14:30:00</td><td>15:30:00</td><td>IT 4-4</td></tr>
 <tr><td>1/ZEN 161/G03/E/L2</td><td>S2</td><td>Friday</td><td>13:30:00</td><td>14:30:00</td><td>Thuto 3-2</td></tr>
 <tr><td>1/ZEN 161/G03/E/L1</td><td>S2</td><td>Thursday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-2</td></tr>
@@ -188,7 +190,7 @@
 <tr><td>1/ALL 124/G24/E/L2</td><td>S2</td><td>Wednesday</td><td>16:30:00</td><td>17:30:00</td><td>GW/HB 3-24</td></tr>
 <tr><td>1/ALL 124/G24/E/L1</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>Teologie/Theology 1-19</td></tr>
 <tr><td>1/ALL 124/G23/E/L2</td><td>S2</td><td>Wednesday</td><td>16:30:00</td><td>17:30:00</td><td>GW/HB 4-12</td></tr>
-<tr><td>1/ALL 124/G23/E/L1</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 4-12</td></tr>
+<tr><td>1/ALL 124/G23/E/L1</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>IT 4-3</td></tr>
 <tr><td>1/ALL 124/G22/E/L2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 4-12</td></tr>
 <tr><td>1/ALL 124/G21/E/L1</td><td>S2</td><td>Monday</td><td>13:30:00</td><td>14:30:00</td><td>GW/HB 3-15</td></tr>
 <tr><td>1/ALL 124/G21/E/L2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>IT 2-24</td></tr>
@@ -216,7 +218,7 @@
 <tr><td>1/ALL 124/G10/E/L2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 3-24</td></tr>
 <tr><td>1/ALL 124/G12/E/L1</td><td>S2</td><td>Tuesday</td><td>07:30:00</td><td>08:30:00</td><td>GW/HB 4-8</td></tr>
 <tr><td>1/ALL 124/G09/E/L2</td><td>S2</td><td>Thursday</td><td>09:30:00</td><td>10:30:00</td><td>IT 2-24</td></tr>
-<tr><td>1/ALL 124/G09/E/L1</td><td>S2</td><td>Tuesday</td><td>07:30:00</td><td>08:30:00</td><td>IT 2-24</td></tr>
+<tr><td>1/ALL 124/G09/E/L1</td><td>S2</td><td>Tuesday</td><td>07:30:00</td><td>08:30:00</td><td>GW/HB 3-14</td></tr>
 <tr><td>1/ALL 124/G08/E/L2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 3-23</td></tr>
 <tr><td>1/ALL 124/G08/E/L1</td><td>S2</td><td>Monday</td><td>13:30:00</td><td>14:30:00</td><td>GW/HB 3-23</td></tr>
 <tr><td>1/ALL 124/G07/E/L2</td><td>S2</td><td>Wednesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 4-13</td></tr>
@@ -1028,8 +1030,7 @@
 <tr><td>7/BCM 771/G01/B/L1</td><td>S1</td><td>Wednesday</td><td>08:30:00</td><td>09:30:00</td><td>Landb Anneks/Agric Annex 2-14</td></tr>
 <tr><td>7/BCM 753/G02/B/L1</td><td>S2</td><td>Tuesday</td><td>09:30:00</td><td>10:30:00</td><td>Landb Anneks/Agric Annex 2-14</td></tr>
 <tr><td>7/BCM 753/G01/B/L1</td><td>S1</td><td>Monday</td><td>08:30:00</td><td>09:30:00</td><td>Landb Anneks/Agric Annex 2-16</td></tr>
-<tr><td>4/WKE 420/G01/B/L2</td><td>S2</td><td>Tuesday</td><td>15:30:00</td><td>16:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/WKE 420/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
+<tr><td>4/WKE 420/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>13:30:00</td><td>14:30:00</td><td>GW/HB 4-7</td></tr>
 <tr><td>4/WDE 450/G01/B/L2</td><td>S1</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>Landb Anneks/Agric Annex 2-18</td></tr>
 <tr><td>4/WDE 450/G01/B/L3</td><td>S1</td><td>Friday</td><td>09:30:00</td><td>10:30:00</td><td>Landb Anneks/Agric Annex 2-9</td></tr>
 <tr><td>4/WDE 450/G01/B/L1</td><td>S1</td><td>Friday</td><td>10:30:00</td><td>11:30:00</td><td>Landb Anneks/Agric Annex 2-9</td></tr>
@@ -1046,7 +1047,7 @@
 <tr><td>2/WTW 220/G03/E/P1</td><td>S2</td><td>Friday</td><td>15:00:00</td><td>17:00:00</td><td>Eeufees/Centenary 1</td></tr>
 <tr><td>4/PGW 400/G01/B/L1</td><td>J/Y</td><td>Thursday</td><td>10:30:00</td><td>13:30:00</td><td>Landb Anneks/Agric Annex 2-18</td></tr>
 <tr><td>2/INF 214/G02/B/P1</td><td>S1</td><td>Monday</td><td>11:30:00</td><td>13:30:00</td><td>Bruin/Brown lab</td></tr>
-<tr><td>4/OMR 410/G01/B/L1</td><td>S2</td><td>Friday</td><td>13:30:00</td><td>15:30:00</td><td>Regsgebou/Law building 1-31</td></tr>
+<tr><td>4/OMR 410/G01/B/L1</td><td>S2</td><td>Friday</td><td>13:30:00</td><td>15:30:00</td><td>GW/HB 4-7</td></tr>
 <tr><td>4/OKW 413/G01/B/P1</td><td>S2</td><td>Tuesday</td><td>08:30:00</td><td>11:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/OKW 413/G01/B/L2</td><td>S2</td><td>Friday</td><td>13:30:00</td><td>14:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/OKW 413/G01/B/L1</td><td>S2</td><td>Monday</td><td>09:30:00</td><td>10:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
@@ -1080,11 +1081,11 @@
 <tr><td>4/ARD 482/G01/B/L3</td><td>S2</td><td>Friday</td><td>16:30:00</td><td>17:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>4/ARD 482/G01/B/L2</td><td>S2</td><td>Thursday</td><td>13:30:00</td><td>14:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>4/ARD 482/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>16:30:00</td><td>17:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/APS 461/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>11:30:00</td><td>14:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
+<tr><td>4/APS 461/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>08:30:00</td><td>11:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/APS 461/G01/B/L2</td><td>S2</td><td>Tuesday</td><td>07:30:00</td><td>08:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/APS 461/G01/B/L1</td><td>S2</td><td>Monday</td><td>13:30:00</td><td>14:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/ANO 410/G02/E/L1</td><td>S1</td><td>Wednesday</td><td>15:30:00</td><td>17:30:00</td><td>IT 2-24</td></tr>
-<tr><td>4/AMR 410/G01/E/L1</td><td>S2</td><td>Monday</td><td>15:30:00</td><td>17:30:00</td><td>IT 4-2</td></tr>
+<tr><td>4/AMR 410/G01/E/L1</td><td>S2</td><td>Monday</td><td>15:30:00</td><td>17:30:00</td><td>Regsgebou/Law building 1-31</td></tr>
 <tr><td>4/AGV 421/G01/E/L1</td><td>S2</td><td>Wednesday</td><td>11:30:00</td><td>13:30:00</td><td>IT 2-25</td></tr>
 <tr><td>4/AGF 420/G01/E/L1</td><td>S2</td><td>Monday</td><td>09:30:00</td><td>11:30:00</td><td>IT 4-3</td></tr>
 <tr><td>4/ABR 410/G01/A/L1</td><td>S1</td><td>Friday</td><td>10:30:00</td><td>12:30:00</td><td>Regsgebou/Law building 1-54</td></tr>
@@ -1116,7 +1117,7 @@
 <tr><td>3/VHD 320/G01/A/L2</td><td>S2</td><td>Friday</td><td>11:30:00</td><td>12:30:00</td><td>Eeufees/Centenary 6</td></tr>
 <tr><td>3/VHD 320/G01/A/L1</td><td>S2</td><td>Thursday</td><td>14:30:00</td><td>15:30:00</td><td>Eeufees/Centenary 3</td></tr>
 <tr><td>3/VGE 301/G01/E/L3</td><td>J/Y</td><td>Friday</td><td>12:30:00</td><td>13:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
-<tr><td>3/VGE 301/G01/E/L2</td><td>J/Y</td><td>Thursday</td><td>09:30:00</td><td>10:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
+<tr><td>3/VGE 301/G01/E/L2</td><td>S2</td><td>Thursday</td><td>09:30:00</td><td>11:30:00</td><td>GW/HB 4-13</td></tr>
 <tr><td>3/VGE 301/G01/E/L1</td><td>J/Y</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>IT 4-2</td></tr>
 <tr><td>3/TNT 310/G01/B/L1</td><td>S1</td><td>Tuesday</td><td>08:30:00</td><td>11:30:00</td><td>Landb Anneks/Agric Annex 2-11</td></tr>
 <tr><td>3/TNT 320/G01/B/L1</td><td>S2</td><td>Monday</td><td>12:30:00</td><td>13:30:00</td><td>Landb Anneks/Agric Annex 2-14</td></tr>
@@ -1371,7 +1372,6 @@
 <tr><td>3/GKD 320/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>07:30:00</td><td>10:30:00</td><td>GW/HB 4-13</td></tr>
 <tr><td>3/GKD 320/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>14:30:00</td><td>GW/HB 4-8</td></tr>
 <tr><td>2/WTW 285/G03/E/P1</td><td>S2</td><td>Wednesday</td><td>14:30:00</td><td>16:30:00</td><td>Noordsaal/North hall</td></tr>
-<tr><td>2/WTW 285/G03/E/P1</td><td>S2</td><td>Wednesday</td><td>14:30:00</td><td>16:30:00</td><td>Teologie/Theology 1-25</td></tr>
 <tr><td>3/GKD 350/G01/B/P1</td><td>S1</td><td>Thursday</td><td>10:30:00</td><td>13:30:00</td><td>GW/HB 3-15</td></tr>
 <tr><td>3/GKD 350/G01/B/L2</td><td>S1</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 4-9</td></tr>
 <tr><td>3/GKD 350/G01/B/L1</td><td>S1</td><td>Tuesday</td><td>11:30:00</td><td>12:30:00</td><td>GW/HB 4-9</td></tr>
@@ -1447,7 +1447,7 @@
 <tr><td>3/WTW 310/G01/B/P1</td><td>S1</td><td>Wednesday</td><td>12:30:00</td><td>14:30:00</td><td>GW/HB 3-24</td></tr>
 <tr><td>3/EKN 325/G01/B/L3</td><td>S2</td><td>Friday</td><td>12:30:00</td><td>13:30:00</td><td>Eeufees/Centenary 3</td></tr>
 <tr><td>3/EKN 325/G01/B/L2</td><td>S2</td><td>Wednesday</td><td>15:30:00</td><td>16:30:00</td><td>Eeufees/Centenary 1</td></tr>
-<tr><td>3/EKN 325/G01/B/L1</td><td>S2</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-9</td></tr>
+<tr><td>3/EKN 325/G01/B/L1</td><td>S2</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>IT 4-2</td></tr>
 <tr><td>3/EKN 314/G01/B/L3</td><td>S1</td><td>Thursday</td><td>13:30:00</td><td>14:30:00</td><td>IT 4-3</td></tr>
 <tr><td>3/EKN 314/G01/B/L2</td><td>S1</td><td>Tuesday</td><td>10:30:00</td><td>11:30:00</td><td>IT 2-25</td></tr>
 <tr><td>3/EKN 314/G01/B/L1</td><td>S1</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>IT 2-25</td></tr>
@@ -1885,8 +1885,8 @@
 <tr><td>2/FBS 200/G01/A/L2</td><td>J/Y</td><td>Thursday</td><td>09:30:00</td><td>10:30:00</td><td>EB/EMB 4-151</td></tr>
 <tr><td>2/ERF 222/G02/E/L2</td><td>S2</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>Thuto 3-2</td></tr>
 <tr><td>2/ERF 222/G02/E/L1</td><td>S2</td><td>Monday</td><td>13:30:00</td><td>14:30:00</td><td>Groot Chemie/Large Chemistry</td></tr>
-<tr><td>2/ERF 222/G01/A/L2</td><td>S2</td><td>Tuesday</td><td>15:30:00</td><td>17:30:00</td><td>GW/HB 3-15</td></tr>
-<tr><td>2/ERF 222/G01/A/L1</td><td>S2</td><td>Monday</td><td>08:30:00</td><td>09:30:00</td><td>GW/HB 3-15</td></tr>
+<tr><td>2/ERF 222/G01/A/L2</td><td>S2</td><td>Tuesday</td><td>15:30:00</td><td>17:30:00</td><td>IT 2-26</td></tr>
+<tr><td>2/ERF 222/G01/A/L1</td><td>S2</td><td>Monday</td><td>08:30:00</td><td>09:30:00</td><td>IT 2-26</td></tr>
 <tr><td>2/ENG 210/G01/E/L3</td><td>S1</td><td>Thursday</td><td>15:30:00</td><td>16:30:00</td><td>Thuto 3-1</td></tr>
 <tr><td>2/ENG 210/G01/E/L2</td><td>S1</td><td>Wednesday</td><td>14:30:00</td><td>15:30:00</td><td>Thuto 1-1</td></tr>
 <tr><td>2/ENG 210/G01/E/L1</td><td>S1</td><td>Monday</td><td>12:30:00</td><td>13:30:00</td><td>Thuto 1-1</td></tr>
@@ -2539,6 +2539,7 @@
 <tr><td>1/FRK 121/G03/A/L1</td><td>S2</td><td>Monday</td><td>12:30:00</td><td>13:30:00</td><td>GW/HB 3-15</td></tr>
 <tr><td>1/FRK 121/G06/E/L4</td><td>S2</td><td>Friday</td><td>10:30:00</td><td>11:30:00</td><td>Regsgebou/Law building 1-54</td></tr>
 <tr><td>1/FRK 121/G06/E/L3</td><td>S2</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>Noordsaal/North hall</td></tr>
+<tr><td>1/FRK 121/G06/E/L3</td><td>S2</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
 <tr><td>1/FRK 121/G06/E/L2</td><td>S2</td><td>Wednesday</td><td>07:30:00</td><td>08:30:00</td><td>Te Watersaal/Te Water hall</td></tr>
 <tr><td>1/FRK 121/G06/E/L1</td><td>S2</td><td>Monday</td><td>11:30:00</td><td>12:30:00</td><td>Eeufees/Centenary 4</td></tr>
 <tr><td>1/FRK 121/G05/E/L4</td><td>S2</td><td>Friday</td><td>10:30:00</td><td>11:30:00</td><td>Eeufees/Centenary 5</td></tr>
@@ -2935,16 +2936,13 @@
 <tr><td>3/DLR 320/G01/A/L4</td><td>S2</td><td>Friday</td><td>09:30:00</td><td>10:30:00</td><td>GW/HB 4-7</td></tr>
 <tr><td>3/WTW 354/G01/B/P1</td><td>S1</td><td>Tuesday</td><td>14:30:00</td><td>16:30:00</td><td>IT 2-26</td></tr>
 <tr><td>2/AFR 214/G01/A/B1</td><td>S1</td><td>Tuesday</td><td>13:30:00</td><td>14:30:00</td><td>IT 4-2</td></tr>
-<tr><td>4/VSX 420/G01/B/L2</td><td>S2</td><td>Wednesday</td><td>08:30:00</td><td>09:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/VSX 420/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>08:30:00</td><td>09:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/VKU 400/G01/B/L1</td><td>S1</td><td>Tuesday</td><td>07:30:00</td><td>09:30:00</td><td>Landb Anneks/Agric Annex 2-18</td></tr>
+<tr><td>4/VSX 420/G01/B/L2</td><td>S2</td><td>Wednesday</td><td>13:30:00</td><td>14:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
+<tr><td>4/VSX 420/G01/B/L1</td><td>S2</td><td></td><td></td><td></td><td>IT 4-2</td></tr>
 <tr><td>4/VKF 411/G01/B/L1</td><td>S1</td><td>Monday</td><td>14:30:00</td><td>17:30:00</td><td>Landb Anneks/Agric Annex 10-26</td></tr>
 <tr><td>4/VGE 411/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>14:30:00</td><td>17:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/VGE 411/G01/B/L2</td><td>S2</td><td>Monday</td><td>08:30:00</td><td>09:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/VGE 411/G01/B/L1</td><td>S2</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/TLR 420/G01/B/P1</td><td>S2</td><td>Monday</td><td>14:30:00</td><td>16:00:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/TLR 420/G01/B/L2</td><td>S2</td><td>Thursday</td><td>07:30:00</td><td>08:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/TLR 420/G01/B/L1</td><td>S2</td><td>Wednesday</td><td>13:30:00</td><td>14:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
+<tr><td>4/VGE 411/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>11:30:00</td><td>13:30:00</td><td>GW/HB 4-12</td></tr>
+<tr><td>4/TLR 420/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>08:30:00</td><td>10:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
+<tr><td>4/TLR 420/G01/B/L1</td><td>S2</td><td>Monday</td><td>07:30:00</td><td>09:30:00</td><td>IT 2-25</td></tr>
 <tr><td>4/TLR 411/G01/B/P1</td><td>S1</td><td></td><td></td><td></td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>4/PVK 420/G01/B/P1</td><td>S1</td><td>Friday</td><td>11:30:00</td><td>14:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>3/OBS 326/G01/E/L3</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>Regsgebou/Law building 1-31</td></tr>
@@ -2965,9 +2963,9 @@
 <tr><td>4/LEK 415/G01/E/P1</td><td>S1</td><td>Tuesday</td><td>13:30:00</td><td>16:30:00</td><td>Landb Anneks/Agric Annex 2-14</td></tr>
 <tr><td>2/CMY 282/G01/B/L2</td><td>K2/Q2</td><td>Tuesday</td><td>13:30:00</td><td>14:30:00</td><td>Eeufees/Centenary 6</td></tr>
 <tr><td>4/LEK 415/G01/E/L3</td><td>S1</td><td>Friday</td><td>10:30:00</td><td>11:30:00</td><td>Landb Anneks/Agric Annex 2-14</td></tr>
-<tr><td>4/KVK 420/G01/B/P1</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>12:00:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/KVK 420/G01/B/L2</td><td>S2</td><td>Wednesday</td><td>10:30:00</td><td>11:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/KVK 420/G01/B/L1</td><td>S2</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
+<tr><td>4/KVK 420/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>10:30:00</td><td>12:30:00</td><td>GW/HB 4-11</td></tr>
+<tr><td>4/KVK 420/G01/B/L2</td><td>S2</td><td>Tuesday</td><td>09:30:00</td><td>11:30:00</td><td>IT 4-3</td></tr>
+<tr><td>4/KVK 420/G01/B/L1</td><td>S2</td><td>Monday</td><td>10:30:00</td><td>11:30:00</td><td>JJ Theronsaal/JJ Theron hall</td></tr>
 <tr><td>4/HSC 420/G01/B/P1</td><td>S2</td><td>Monday</td><td>14:30:00</td><td>17:30:00</td><td>LandbouWetgebou/Agric Science Bld 5-11</td></tr>
 <tr><td>4/GVK 420/G01/B/P1</td><td>S1</td><td>Tuesday</td><td>15:30:00</td><td>17:00:00</td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>4/GVK 420/G01/B/L1</td><td>S1</td><td>Monday</td><td>12:30:00</td><td>14:30:00</td><td>Landb Anneks/Agric Annex 2-7</td></tr>
@@ -3255,7 +3253,7 @@
 <tr><td>3/BER 310/G01/A/L1</td><td>S1</td><td>Tuesday</td><td>08:30:00</td><td>10:30:00</td><td>GW/HB 4-13</td></tr>
 <tr><td>3/BDO 372/G01/E/L1</td><td>S1</td><td>Friday</td><td>07:30:00</td><td>09:30:00</td><td>GW/HB 4-11</td></tr>
 <tr><td>3/BDO 371/G01/E/L1</td><td>J/Y</td><td>Wednesday</td><td>13:30:00</td><td>14:30:00</td><td>GW/HB 3-23</td></tr>
-<tr><td>4/VKU 400/G01/B/L2</td><td>S1</td><td>Friday</td><td>07:30:00</td><td>09:30:00</td><td>Landb Anneks/Agric Annex 2-7</td></tr>
+<tr><td>4/VKU 400/G01/B/L2</td><td>S2</td><td>Friday</td><td>07:30:00</td><td>09:30:00</td><td>Landb Anneks/Agric Annex 2-7</td></tr>
 <tr><td>2/GMA 220/G01/B/P1</td><td>S1</td><td>Wednesday</td><td>14:30:00</td><td>17:30:00</td><td>SIT 1 lab</td></tr>
 <tr><td>3/BDO 329/G01/E/L2</td><td>S2</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>EB/EMB 2-151</td></tr>
 <tr><td>3/BDO 329/G01/E/L1</td><td>S2</td><td>Tuesday</td><td>13:30:00</td><td>15:30:00</td><td>EB/EMB 4-150</td></tr>
@@ -3737,7 +3735,7 @@
 <tr><td>2/WTW 221/G02/E/L2</td><td>S2</td><td>Wednesday</td><td>09:30:00</td><td>10:30:00</td><td>Teologie/Theology 1-25</td></tr>
 <tr><td>2/WTW 221/G02/E/L1</td><td>S2</td><td>Tuesday</td><td>08:30:00</td><td>09:30:00</td><td>GW/HB 4-3</td></tr>
 <tr><td>2/FBS 222/G01/E/L3</td><td>S2</td><td>Thursday</td><td>13:30:00</td><td>14:30:00</td><td>Eeufees/Centenary 1</td></tr>
-<tr><td>2/FBS 222/G01/E/L2</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>IT 4-5</td></tr>
+<tr><td>2/FBS 222/G01/E/L2</td><td>S2</td><td>Tuesday</td><td>12:30:00</td><td>13:30:00</td><td>Mullersaal/Muller hall</td></tr>
 <tr><td>2/FBS 222/G01/E/L1</td><td>S2</td><td>Monday</td><td>14:30:00</td><td>15:30:00</td><td>IT 4-5</td></tr>
 <tr><td>2/FBS 212/G01/E/L3</td><td>S1</td><td>Thursday</td><td>08:30:00</td><td>09:30:00</td><td>Louwsaal/Louw hall</td></tr>
 <tr><td>2/FBS 212/G01/E/L2</td><td>S1</td><td>Tuesday</td><td>14:30:00</td><td>15:30:00</td><td>Louwsaal/Louw hall</td></tr>
@@ -3760,7 +3758,7 @@
 <tr><td>7/IOK 702/G01/B/L1</td><td>J/Y</td><td>Tuesday</td><td>14:30:00</td><td>17:30:00</td><td>IT 2-25</td></tr>
 <tr><td>3/MWP 361/G01/E/P2</td><td>J/Y</td><td>Wednesday</td><td>10:30:00</td><td>12:30:00</td><td>GW/HB 1-4</td></tr>
 <tr><td>2/COS 284/G02/E/L2</td><td>S2</td><td>Tuesday</td><td>07:30:00</td><td>08:30:00</td><td>EB/EMB 4-152</td></tr>
-<tr><td>1/VPL 100/G01/E/L1</td><td>J/Y</td><td></td><td></td><td></td><td>Noordsaal/North hall</td></tr>
+<tr><td>1/VPL 100/G01/E/L1</td><td>J/Y</td><td>Wednesday</td><td>15:30:00</td><td>17:30:00</td><td>Teologie/Theology 1-25</td></tr>
 <tr><td>7/IOK 704/G01/B/L1</td><td>J/Y</td><td>Thursday</td><td>14:30:00</td><td>17:30:00</td><td>IT 2-25</td></tr>
 <tr><td>7/IOK 703/G01/B/L1</td><td>J/Y</td><td>Wednesday</td><td>14:30:00</td><td>17:30:00</td><td>IT 2-25</td></tr>
 <tr><td>3/PUB 310/G01/B/P1</td><td>S1</td><td>Monday</td><td>13:30:00</td><td>15:30:00</td><td>Geel/Yellow lab</td></tr>
@@ -3811,10 +3809,9 @@
 <tr><td>3/SIN 325/G01/B/P1</td><td>S2</td><td>Wednesday</td><td>13:30:00</td><td>15:30:00</td><td>Ing/Eng III - 4</td></tr>
 <tr><td>3/SIN 325/G01/B/T1</td><td>S2</td><td>Tuesday</td><td>09:30:00</td><td>10:30:00</td><td>Ing/Eng III - 2</td></tr>
 <tr><td>1/GLY 161/G01/E/P1</td><td>K4</td><td>Tuesday</td><td>14:30:00</td><td>17:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>1/GLY 161/G01/E/L4</td><td>K4</td><td>Friday</td><td>11:30:00</td><td>12:30:00</td><td>Eeufees/Centenary 5</td></tr>
-<tr><td>1/GLY 161/G01/E/L3</td><td>K4</td><td>Wednesday</td><td>15:30:00</td><td>16:30:00</td><td>Eeufees/Centenary 5</td></tr>
-<tr><td>1/GLY 161/G01/E/L2</td><td>K4</td><td>Wednesday</td><td>14:30:00</td><td>15:30:00</td><td>Eeufees/Centenary 5</td></tr>
-<tr><td>1/GLY 161/G01/E/L1</td><td>K4</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>AE Oudit/Audit</td></tr>
+<tr><td>1/GLY 161/G01/E/L4</td><td>K4</td><td>Friday</td><td>11:30:00</td><td>12:30:00</td><td>Ing/Eng II 4-38</td></tr>
+<tr><td>1/GLY 161/G01/E/L2</td><td>K4</td><td>Wednesday</td><td>14:30:00</td><td>16:30:00</td><td>Ing/Eng III - 6</td></tr>
+<tr><td>1/GLY 161/G01/E/L1</td><td>K4</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>Ing/Eng II 4-21</td></tr>
 <tr><td>1/EKN 110/G06/E/L3</td><td>S1</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>Eeufees/Centenary 5</td></tr>
 <tr><td>1/EKN 110/G06/E/L2</td><td>S1</td><td>Wednesday</td><td>11:30:00</td><td>12:30:00</td><td>Thuto 1-2</td></tr>
 <tr><td>1/EKN 110/G06/E/L1</td><td>S1</td><td>Monday</td><td>15:30:00</td><td>16:30:00</td><td>IT 4-1</td></tr>
@@ -3870,8 +3867,6 @@
 <tr><td>3/PHY 300/G01/B/L3</td><td>S1</td><td>Wednesday</td><td>09:30:00</td><td>10:30:00</td><td>NW1 5-36</td></tr>
 <tr><td>3/PHY 300/G01/B/L4</td><td>S1</td><td>Friday</td><td>14:30:00</td><td>15:30:00</td><td>NW1 5-36</td></tr>
 <tr><td>3/PHY 300/G01/B/L1</td><td>S1</td><td>Monday</td><td>07:30:00</td><td>08:30:00</td><td>NW1 5-36</td></tr>
-<tr><td>4/KVK 420/G01/B/L3</td><td>S2</td><td>Thursday</td><td>12:30:00</td><td>13:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
-<tr><td>4/KVK 420/G01/B/L4</td><td>S2</td><td>Friday</td><td>10:30:00</td><td>11:30:00</td><td>Raadpleeg/Consult Dept</td></tr>
 <tr><td>4/GVK 420/G01/B/L2</td><td>S1</td><td>Wednesday</td><td>11:30:00</td><td>14:30:00</td><td>Landb Anneks/Agric Annex 2-9</td></tr>
 <tr><td>3/WTW 354/G01/B/L2</td><td>S1</td><td>Friday</td><td>07:30:00</td><td>08:30:00</td><td>Suidsaal/South hall</td></tr>
 <tr><td>7/MEK 780/G01/B/L1</td><td>S2</td><td>Monday</td><td>17:30:00</td><td>20:30:00</td><td>IT 4-2</td></tr>
@@ -3939,7 +3934,6 @@
 <tr><td>3/AFT 320/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 1-12</td></tr>
 <tr><td>3/AFT 320/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 1-13</td></tr>
 <tr><td>3/AFT 320/G01/B/L1</td><td>S2</td><td>Tuesday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-5</td></tr>
-<tr><td>2/AFT 220/G01/B/L2</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-13</td></tr>
 <tr><td>2/AFT 220/G01/B/L2</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-16</td></tr>
 <tr><td>2/AFT 220/G01/B/L2</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-6</td></tr>
 <tr><td>2/AFT 220/G01/B/L2</td><td>S2</td><td>Thursday</td><td>10:30:00</td><td>11:30:00</td><td>GW/HB 4-5</td></tr>

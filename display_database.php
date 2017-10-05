@@ -24,6 +24,8 @@
                 <td> End </td>
                 <td> Sem</td>
                 <td> Type </td>
+                <td> Lang </td>
+                <td> Group </td>
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';
@@ -66,6 +68,7 @@
                     <td> Sem</td>
                     <td> Type </td>
                     <td> Lang </td>
+                    <td> Group </td>
                </tr>';
         $table .= '</thead>';
         $table .= '<tbody>';
